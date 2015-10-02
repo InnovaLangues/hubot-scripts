@@ -7,7 +7,7 @@ module.exports = (robot) ->
       res.send 'OK'
 
   robot.respond /say (.*) (.*)/i, (msg) ->
-    msg.send "say" + msg[1] + "in" msg[0] 
+    msg.send "say" + msg.match[1] + "in" msg.match[0] 
 
   robot.hear /bonjour|salut/i, (msg) ->
     msg.reply "Bonjour."
