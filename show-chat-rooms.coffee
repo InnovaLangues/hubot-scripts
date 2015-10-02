@@ -1,3 +1,14 @@
+# Description:
+#   Shows all Gitter chatrooms hubot knows about
+#
+# Dependencies:
+#   None
+#
+# Commands:
+#   hubot show rooms - Shows all Gitter chatrooms hubot knows about
+#
+# Author:
+#   Donovan Tengbad
 module.exports = (robot) ->
   robot.respond /show\s+rooms/i, (msg)->
     msg.http("https://api.gitter.im/v1/rooms/")
