@@ -6,10 +6,13 @@ module.exports = (robot) ->
       robot.messageRoom room, "#{message}"
       res.send 'OK'
 
-  robot.hear /bonjour|salut/i, (msg) ->
-    msg.reply "Bonjour à toi.:"
+  robot.respond /say (.*) (.*)/i, (msg) ->
+    msg.send "say" + msg[1] + "in" msg[0] 
 
-  robot.hear /biere|bière|appero|appéro/i, (msg) ->
+  robot.hear /bonjour|salut/i, (msg) ->
+    msg.reply "Bonjour."
+
+  robot.hear /biere|bière|appero|appéro|picole/i, (msg) ->
     msg.reply "Bonne idée, j'ai soif."
 
   robot.hear /cloppe|cigarette/i, (msg) ->
