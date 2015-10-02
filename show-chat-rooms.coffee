@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.respond /show\s+rooms/i, (msg)->
-    msg.send process.env
+    console.log robot.messageRooms
     if process.env.HUBOT_XMPP_ROOMS
       rooms = process.env.HUBOT_XMPP_ROOMS.split(",")
       plural = if rooms.length > 1 then true else false
