@@ -6,8 +6,11 @@ module.exports = (robot) ->
       robot.messageRoom room, "#{message}"
       res.send 'OK'
 
-  robot.respond /say (.*) (.*)/i, (msg) ->
-    msg.send "say" + msg.match[1] + "in" msg.match[0] 
+  robot.respond /say (.*)/i, (msg) ->
+    robot.messageRoom msg.match[1]
+
+  robot.respond /say (.*?) (.*)/i, (msg) ->
+    robot.messageRoom msg.match[1], msg.match[2]
 
   robot.hear /bonjour|salut/i, (msg) ->
     msg.reply "Bonjour."
