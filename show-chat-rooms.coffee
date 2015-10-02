@@ -5,12 +5,12 @@
 #   None
 #
 # Commands:
-#   hubot show rooms - Shows all Gitter chatrooms hubot knows about
+#   hubot rooms - Shows all Gitter chatrooms hubot knows about
 #
 # Author:
 #   Donovan Tengbad
 module.exports = (robot) ->
-  robot.respond /show\s+rooms/i, (msg)->
+  robot.respond /rooms/i, (msg)->
     msg.http("https://api.gitter.im/v1/rooms/")
       .headers("Authorization": "Bearer " + process.env.HUBOT_GITTER2_TOKEN, "Accept": "application/json", "Content-Type": "application/json")
       .get() (err, res, body) ->
