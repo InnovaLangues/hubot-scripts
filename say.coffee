@@ -18,7 +18,7 @@ module.exports = (robot) ->
   robot.hear /biere|bière|apero|apéro|picole/i, (msg) ->
     msg.reply "Bonne idée, j'ai soif."
 
-  robot.hear /cloppe|cigarette/i, (msg) ->
+  robot.hear /clope|cigarette/i, (msg) ->
     msg.reply "Tu devrait penser à arrêter, c'est pas bon pour la santé."
 
   robot.hear /café|cafe/i, (msg) ->
