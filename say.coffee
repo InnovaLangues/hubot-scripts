@@ -15,7 +15,7 @@ module.exports = (robot) ->
   robot.hear /bonjour|salut/i, (msg) ->
     msg.reply "Bonjour."
 
-  robot.hear /biere|bière|appero|appéro|picole/i, (msg) ->
+  robot.hear /biere|bière|apero|apéro|picole/i, (msg) ->
     msg.reply "Bonne idée, j'ai soif."
 
   robot.hear /cloppe|cigarette/i, (msg) ->
