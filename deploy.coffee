@@ -5,7 +5,10 @@ module.exports = (robot) ->
         .get() (err, res, body) ->
           msg.send err
           msg.send res
-          msg.send body
+
+          travis = JSON.parse(body)
+
+          msg.send travis.branch.state
 
       @exec = require('child_process').exec
       command = "echo TEST"
