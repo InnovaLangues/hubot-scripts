@@ -16,12 +16,14 @@ module.exports = (robot) ->
               #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
               @exec command, (error, stdout, stderr) ->
                 if error
+                  msg.send "Une erreur c'est produite"
                   msg.send error
                 if stdout
                   msg.send stdout
+                  msg.reply "J'ai fini"
                 if stderr
+                  msg.send "Une erreur c'est produite"
                   msg.send stderr   
-                msg.reply "J'ai fini"
             else
               msg.send "Travis me signale que ta branche est daubé, je vais quand même pas tout péter..."
     else
