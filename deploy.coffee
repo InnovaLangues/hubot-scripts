@@ -15,9 +15,12 @@ module.exports = (robot) ->
               command = "echo TEST"
               #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
               @exec command, (error, stdout, stderr) ->
-                msg.send error
-                msg.send stdout
-                msg.send stderr   
+                if error
+                  msg.send error
+                if stdout
+                  msg.send stdout
+                if stderr
+                  msg.send stderr   
                 msg.reply "J'ai fini"
             else
               msg.send "Travis me signale que ta branche est daubé, je vais quand même pas tout péter..."
