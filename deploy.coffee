@@ -8,16 +8,19 @@ module.exports = (robot) ->
 
           travis = JSON.parse(body)
 
-          msg.send travis.branch.state
+          if travis.branch.state == "passed"
 
-      @exec = require('child_process').exec
-      command = "echo TEST"
-      #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
-      msg.reply "OK"
+            @exec = require('child_process').exec
+            command = "echo TEST"
+            #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
+            
+            msg.reply "OK"
 
-      @exec command, (error, stdout, stderr) ->
-        msg.send error
-        msg.send stdout
-        msg.send stderr
+            @exec command, (error, stdout, stderr) ->
+              msg.send error
+              msg.send stdout
+              msg.send stderr
+          else
+            msg.send "Travis me dit que ta branche est soit en attent soit daubé, je vais quand même pas tout péter..."
     else
        msg.send "J'ai pas envie, ta tête me convient pas"
