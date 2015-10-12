@@ -1,12 +1,15 @@
 module.exports = (robot) ->
   robot.respond /deploy self/i, (msg) ->
-    msg.reply "OK."
+    if robot.auth.hasRole(msg.envelope.user, "self-admin")
+        @exec = require('child_process').exec
+        command = "echo TEST"
+        #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
+        msg.reply "OK."
 
-    @exec = require('child_process').exec
-    command = "echo TEST"
-    #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
-
-    @exec command, (error, stdout, stderr) ->
-      msg.send error
-      msg.send stdout
-      msg.send stderr
+        @exec command, (error, stdout, stderr) ->
+          msg.send error
+          msg.send stdout
+          msg.send stderr
+    else
+       msg.send "Sorry you can't ask me to PONG"
+    
