@@ -4,12 +4,12 @@ module.exports = (robot) ->
         @exec = require('child_process').exec
         command = "echo TEST"
         #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
-        msg.reply "OK."
+        msg.reply "OK"
 
         @exec command, (error, stdout, stderr) ->
           msg.send error
           msg.send stdout
           msg.send stderr
     else
-       msg.send "Sorry you can't ask me to PONG"
+       msg.send "J'ai pas envie, ta tête me convient pas"
     
