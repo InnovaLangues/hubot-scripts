@@ -3,9 +3,9 @@ module.exports = (robot) ->
     if robot.auth.hasRole(msg.envelope.user, "self-admin")
       msg.http("https://api.travis-ci.org/repos/1275015/branches/master")
         .get() (err, res, body) ->
-          msg.send error
-          msg.send stdout
-          msg.send stderr
+          msg.send err
+          msg.send res
+          msg.send body
 
       @exec = require('child_process').exec
       command = "echo TEST"
