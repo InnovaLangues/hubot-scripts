@@ -26,3 +26,6 @@ module.exports = (robot) ->
 
   robot.hear /maman|mère/i, (msg) ->
     msg.reply "On avait dit pas les mamans..."
+    
+  robot.hear /noot/i, (msg) ->
+    msg.reply "NOOT NOOT !!!"
