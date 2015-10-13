@@ -1,5 +1,16 @@
+# Description:
+#   SELF Commands
+#
+# Dependencies:
+#   None
+#
+# Commands:
+#   hubot self deploy - Deploy SELF master branch to production
+#
+# Author:
+#   Donovan Tengbad
 module.exports = (robot) ->
-  robot.respond /deploy self/i, (msg) ->
+  robot.respond /self deploy/i, (msg) ->
     if robot.auth.hasRole(msg.envelope.user, "self-admin")
       msg.http("https://api.travis-ci.org/repos/1275015/branches/master")
         .get() (err, res, body) ->
