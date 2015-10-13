@@ -33,7 +33,7 @@ module.exports = (robot) ->
   robot.hear /clope|cigarette/i, (msg) ->
     messages = [
       "Tu devrais penser à arrêter, c'est pas bon pour la santé!",
-      "La dérnière fois que j'ai essayé... j'ai pris feu",,
+      "La dérnière fois que j'ai essayé... j'ai pris feu",
       "![](https://s-media-cache-ak0.pinimg.com/736x/13/48/70/134870c638fe79797093575962aee759.jpg)",
       "![](https://s-media-cache-ak0.pinimg.com/736x/9c/f2/44/9cf244d9570ba2a684af39d5b7e8a86c.jpg)"
     ]
