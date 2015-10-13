@@ -60,6 +60,6 @@ module.exports = (robot) ->
     
     msg.reply msg.random images
     
-  robot.hear /noot|pingu/i, (msg) ->
+  robot.hear /root|noot|pingu/i, (msg) ->
     msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
