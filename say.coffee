@@ -27,6 +27,9 @@ module.exports = (robot) ->
   robot.hear /maman|mère|pute|prostituée|péripapétitienne/i, (msg) ->
     images = [
       "![](http://m.memegen.com/11x8gi.jpg)",
+      "![](http://m.memegen.com/hwbi00.jpg)",
+      "![](http://m.memegen.com/l8zjd9.jpg)",
+      "![](http://m.memegen.com/f67tk2.jpg)",
       "![](http://m.memegen.com/sutzal.jpg)"
     ]
     
