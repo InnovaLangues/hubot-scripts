@@ -25,9 +25,13 @@ module.exports = (robot) ->
     msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
 
   robot.hear /maman|mère|pute|prostituée|péripapétitienne/i, (msg) ->
-    msg.reply "![](http://m.memegen.com/11x8gi.jpg)"
+    images = [
+      "![](http://m.memegen.com/11x8gi.jpg)",
+      "![](http://m.memegen.com/sutzal.jpg)"
+    ]
+    
+    msg.reply msg.random images
     
   robot.hear /noot|pingu/i, (msg) ->
     msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
-    
