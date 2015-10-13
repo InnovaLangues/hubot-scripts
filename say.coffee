@@ -27,6 +27,9 @@ module.exports = (robot) ->
   robot.hear /maman|mère/i, (msg) ->
     msg.reply "![](http://m.memegen.com/11x8gi.jpg)"
     
+  robot.hear /pute|prostituée|peripapétitienne/i, (msg) ->
+    msg.reply "On avait dit pas les mamans :("
+    
   robot.hear /noot|pingu/i, (msg) ->
     msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
