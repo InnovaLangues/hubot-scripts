@@ -25,12 +25,20 @@ module.exports = (robot) ->
     msg.reply msg.random messages
 
   robot.hear /clope|cigarette/i, (msg) ->
-    msg.reply "Tu devrais penser à arrêter, c'est pas bon pour la santé!"
+    messages = [
+      "Tu devrais penser à arrêter, c'est pas bon pour la santé!",
+      "La dérnière fois que j'ai essayé... j'ai pris feu",,
+      "![](https://s-media-cache-ak0.pinimg.com/736x/13/48/70/134870c638fe79797093575962aee759.jpg)",
+      "![](https://s-media-cache-ak0.pinimg.com/736x/9c/f2/44/9cf244d9570ba2a684af39d5b7e8a86c.jpg)"
+    ]
+    msg.reply msg.random messages
 
   robot.hear /café|cafe|cofee|kawa/i, (msg) ->
     messages = [
       "Meh... juste un quart d'huile pour moi, noir sans sucre.",
       "C'est gentil, mais je ne tient pas la caféine",
+      "![](https://s-media-cache-ak0.pinimg.com/236x/78/c9/ef/78c9ef5cc04f68524fc2d8df19c0e112.jpg)",
+      "![](http://orig06.deviantart.net/d5f3/f/2011/121/a/9/sir_sanka_steampunk_robot_by_jonesroboworks-d3fdv6s.jpg)",
       "![](c2.staticflickr.com/4/3349/3636396625_23da09e647_n.jpg)"
     ]
     msg.reply msg.random messages
