@@ -25,7 +25,7 @@ module.exports = (robot) ->
     msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
 
   robot.hear /maman|mère/i, (msg) ->
-    msg.reply "On avait dit pas les mamans..."
+    msg.reply "![](http://m.memegen.com/11x8gi.jpg)"
     
   robot.hear /noot|pingu/i, (msg) ->
     msg.send "NOOOOT NOOOOOOOOOOOT!!!"
