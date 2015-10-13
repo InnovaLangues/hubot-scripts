@@ -15,13 +15,13 @@ module.exports = (robot) ->
   robot.hear /bonjour|salut/i, (msg) ->
     msg.reply "Bonjour."
 
-  robot.hear /biere|bière|apero|apéro|picole/i, (msg) ->
+  robot.hear /biere|bière|apero|apéro|picole|alcool/i, (msg) ->
     msg.reply "Bonne idée, j'ai soif."
 
   robot.hear /clope|cigarette/i, (msg) ->
-    msg.reply "Tu devrais penser à arrêter, c'est pas bon pour la santé."
+    msg.reply "Tu devrais penser à arrêter, c'est pas bon pour la santé. Ou alors fume un joint c'est mieux"
 
-  robot.hear /café|cafe/i, (msg) ->
+  robot.hear /café|cafe|cofee|kawa/i, (msg) ->
     msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
 
   robot.hear /maman|mère/i, (msg) ->
