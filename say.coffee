@@ -13,7 +13,11 @@ module.exports = (robot) ->
     robot.messageRoom msg.match[1], msg.match[2]
 
   robot.hear /bonjour|salut/i, (msg) ->
-    msg.reply "Bonjour."
+    messages = [
+      "Bonjour!",
+      "Salut"
+    ]
+    msg.reply msg.random messages
 
   robot.hear /biere|bière|apero|apéro|picole|alcool/i, (msg) ->
     messages = [
