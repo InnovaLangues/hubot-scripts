@@ -19,7 +19,7 @@ module.exports = (robot) ->
     msg.reply "Bonne idée, j'ai soif."
 
   robot.hear /clope|cigarette/i, (msg) ->
-    msg.reply "Tu devrait penser à arrêter, c'est pas bon pour la santé."
+    msg.reply "Tu devrais penser à arrêter, c'est pas bon pour la santé."
 
   robot.hear /café|cafe/i, (msg) ->
     msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
