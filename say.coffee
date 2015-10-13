@@ -16,13 +16,24 @@ module.exports = (robot) ->
     msg.reply "Bonjour."
 
   robot.hear /biere|bière|apero|apéro|picole|alcool/i, (msg) ->
-    msg.reply "Bonne idée, j'ai soif."
+    messages = [
+      "Bonne idée, j'ai soif",
+      "C'est déja l'heure ?",
+      "J'ai encore mal à la tête",
+      "J'ai piscine"
+    ]
+    msg.reply msg.random messages
 
   robot.hear /clope|cigarette/i, (msg) ->
-    msg.reply "Tu devrais penser à arrêter, c'est pas bon pour la santé. Ou alors fume un joint c'est mieux!"
+    msg.reply "Tu devrais penser à arrêter, c'est pas bon pour la santé!"
 
   robot.hear /café|cafe|cofee|kawa/i, (msg) ->
-    msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
+    messages = [
+      "Meh... juste un quart d'huile pour moi, noir sans sucre.",
+      "C'est gentil, mais je ne tient pas la caféine",
+      "![](c2.staticflickr.com/4/3349/3636396625_23da09e647_n.jpg)"
+    ]
+    msg.reply msg.random messages
 
   robot.hear /maman|mère|pute|prostituée|péripapétitienne/i, (msg) ->
     images = [
