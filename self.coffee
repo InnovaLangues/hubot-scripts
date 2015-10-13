@@ -23,8 +23,7 @@ module.exports = (robot) ->
             if travis.branch.state == "passed"
               msg.send "Travis me signale que ta branche est bonne, je la met en prod"
               @exec = require('child_process').exec
-              command = "echo TEST"
-              #command = "self-deploy-prod uction" // TODO test quand Arnaud est dans les parrages.
+              command = "self-deploy-production"
               @exec command, (error, stdout, stderr) ->
                 if error
                   msg.send "Une erreur c'est produite"
