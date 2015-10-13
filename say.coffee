@@ -28,4 +28,6 @@ module.exports = (robot) ->
     msg.reply "On avait dit pas les mamans..."
     
   robot.hear /noot|pingu/i, (msg) ->
-    msg.reply "NOOOOT NOOOOOOOOOOOT!!!"
+    msg.send "NOOOOT NOOOOOOOOOOOT!!!"
+    msg.send "![](http://noot.space/noot.gif)"
+    
