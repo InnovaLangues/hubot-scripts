@@ -28,6 +28,6 @@ module.exports = (robot) ->
     msg.reply "![](http://m.memegen.com/11x8gi.jpg)"
     
   robot.hear /noot|pingu/i, (msg) ->
-    msg.send "NOOOOT NOOOOOOOOOOOT!!!"
+    msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
     
