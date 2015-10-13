@@ -28,4 +28,4 @@ module.exports = (robot) ->
     msg.reply "On avait dit pas les mamans..."
     
   robot.hear /noot/i, (msg) ->
-    msg.reply "NOOOOT NOOOOOOOOOOOT !!!"
+    msg.reply "NOOOOT NOOOOOOOOOOOT!!!"
