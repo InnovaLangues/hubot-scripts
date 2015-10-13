@@ -23,3 +23,6 @@ module.exports = (robot) ->
 
   robot.hear /café|cafe/i, (msg) ->
     msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
+
+  robot.hear /maman|mère/i, (msg) ->
+    msg.reply "On avait dit pas les mamans..."
