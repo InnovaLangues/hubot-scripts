@@ -24,7 +24,8 @@ module.exports = (robot) ->
       "Bonne idée, j'ai soif",
       "C'est déja l'heure ?",
       "J'ai encore mal à la tête",
-      "J'ai piscine"
+      "J'ai piscine",
+      "![](https://s-media-cache-ak0.pinimg.com/736x/32/34/52/323452dbf87c9e2c162277fbe0734a0c.jpg)"
     ]
     msg.reply msg.random messages
 
