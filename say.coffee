@@ -24,7 +24,7 @@ module.exports = (robot) ->
   robot.hear /café|cafe|cofee|kawa/i, (msg) ->
     msg.reply "Meh... juste un quart d'huile pour moi, noir sans sucre."
 
-  robot.hear /maman|mère|pute|prostituée|peripapétitienne/i, (msg) ->
+  robot.hear /maman|mère|pute|prostituée|péripapétitienne/i, (msg) ->
     msg.reply "![](http://m.memegen.com/11x8gi.jpg)"
     
   robot.hear /noot|pingu/i, (msg) ->
