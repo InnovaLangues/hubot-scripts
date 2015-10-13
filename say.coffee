@@ -25,7 +25,8 @@ module.exports = (robot) ->
       "C'est déja l'heure ?",
       "J'ai encore mal à la tête",
       "J'ai piscine",
-      "![](https://s-media-cache-ak0.pinimg.com/736x/32/34/52/323452dbf87c9e2c162277fbe0734a0c.jpg)"
+      "![](https://s-media-cache-ak0.pinimg.com/736x/32/34/52/323452dbf87c9e2c162277fbe0734a0c.jpg)",
+      "![](https://s-media-cache-ak0.pinimg.com/236x/c0/8b/8c/c08b8c6f0b639e37f59e9d1a111706b2.jpg)"
     ]
     msg.reply msg.random messages
 
