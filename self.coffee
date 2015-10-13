@@ -23,7 +23,7 @@ module.exports = (robot) ->
             if travis.branch.state == "passed"
               msg.send "Travis me signale que ta branche est bonne, je la met en prod"
               @exec = require('child_process').exec
-              command = "self-deploy-production"
+              command = "ansible-playbook -i /home/hubot/ansible/self-deploy/production /home/hubot/ansible/self-deploy/self.yml"
               @exec command, (error, stdout, stderr) ->
                 if error
                   msg.send "Une erreur c'est produite"
