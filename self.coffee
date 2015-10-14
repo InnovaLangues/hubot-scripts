@@ -25,7 +25,7 @@ module.exports = (robot) ->
               @exec = require('child_process').exec
               command = "ansible-playbook -i /home/hubot/ansible/self-deploy/production /home/hubot/ansible/self-deploy/self.yml"
               @exec command, (error, stdout, stderr) ->
-                if error !== null
+                if error != null
                   console.log('exec error: ' + error)
                 if stderr
                   msg.send "Une erreur c'est produite :"
