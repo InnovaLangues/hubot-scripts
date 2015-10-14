@@ -25,15 +25,15 @@ module.exports = (robot) ->
               @exec = require('child_process').exec
               command = "ansible-playbook -i /home/hubot/ansible/self-deploy/production /home/hubot/ansible/self-deploy/self.yml"
               @exec command, (error, stdout, stderr) ->
-                if error
-                  msg.send "Une erreur c'est produite"
-                  msg.send error
-                if stdout
-                  msg.send stdout
-                  msg.reply "J'ai fini"
+                if (error !== null) {
+                  console.log('exec error: ' + error);
+                }
                 if stderr
-                  msg.send "Une erreur c'est produite"
-                  msg.send stderr   
+                  msg.send "Une erreur c'est produite :"
+                  msg.send "```` \n #{stderr} \n ````"   
+                if stdout
+                  msg.send "```` \n #{stdout} \n ````"
+                  msg.reply "J'ai fini"
             else
               msg.send "Travis me signale que ta branche est daubé, je vais quand même pas tout péter..."
     else
