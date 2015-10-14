@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.router.get '/', (req, res) ->
-      res.send 'OK'
+      res.send '<img alt="I have found things" src="https://octodex.github.com/images/hubot.jpg" />'
 
   robot.router.post '/say', (req, res) ->
       data = if req.body.payload? then JSON.parse req.body.payload else req.body
