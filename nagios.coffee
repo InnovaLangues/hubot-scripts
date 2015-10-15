@@ -32,4 +32,4 @@ announceNagiosHostMessage = (host, hostOutput, notificationType, cb) ->
   cb "**Nagios #{notificationType} :** \n>#{host} is #{hostOutput}"
 
 announceNagiosServiceMessage = (host, notificationType, serviceDescription, serviceState, serviceOutput, cb) ->
-  cb "**Nagios #{notificationType} :** \n>Host : #{host}\n>Service description : #{serviceDescription}\nState : #{serviceState}\nOutput : #{serviceOutput}"
+  cb "**Nagios #{notificationType} :** \n>Host : #{host}\n>Service : #{serviceDescription}\nState : #{serviceState}\nOutput : #{serviceOutput}"
