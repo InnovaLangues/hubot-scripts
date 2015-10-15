@@ -22,7 +22,7 @@ module.exports = (robot) ->
     ]
     msg.reply msg.random messages
 
-  robot.hear /(.*)\s+(contre|vs|versus)\s+(.*)/i, (msg) ->
+  robot.hear /([^\s]+)\s+(contre|vs|versus|vs\.)\s+([^\s]+).*$/i, (msg) ->
     messages = [
       msg.match[1],
       msg.match[3]
