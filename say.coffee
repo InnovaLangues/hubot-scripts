@@ -63,7 +63,7 @@ module.exports = (robot) ->
     
     msg.reply msg.random images
     
-    robot.hear /gastro/i, (msg) ->
+  robot.hear /gastro/i, (msg) ->
     images = [
       "![](https://www.constantlyvariedgear.com/image/data/cvgblog/mud-run/mud-run-live-pictures.jpeg)"
     ]
