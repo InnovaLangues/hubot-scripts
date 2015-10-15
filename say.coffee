@@ -65,7 +65,9 @@ module.exports = (robot) ->
     
   robot.hear /gastro/i, (msg) ->
     images = [
-      "![](https://www.constantlyvariedgear.com/image/data/cvgblog/mud-run/mud-run-live-pictures.jpeg)"
+      "![](https://www.constantlyvariedgear.com/image/data/cvgblog/mud-run/mud-run-live-pictures.jpeg)",
+      "![](http://static.independent.co.uk/s3fs-public/thumbnails/image/2013/07/10/11/mud-day1-EPA.jpg)",
+      "![](http://www.vosizneias.com/assets/uploads/news_photos/thumbnails/800_ky0tkdgvlqlmtbgzq6vsfuatx1xoz8hq.jpg)"
     ]
     
     msg.reply msg.random images
