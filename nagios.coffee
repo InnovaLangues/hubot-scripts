@@ -29,7 +29,7 @@ event_room = (robot) ->
   return robot.brain.data.nagios_event_room
 
 announceNagiosHostMessage = (host, hostOutput, notificationType, cb) ->
-  cb "nagios #{notificationType}: #{host} is #{hostOutput}"
+  cb "**Nagios #{notificationType} :** \n blockquote>#{host} is #{hostOutput}"
 
 announceNagiosServiceMessage = (host, notificationType, serviceDescription, serviceState, serviceOutput, cb) ->
-  cb "nagios #{notificationType}: #{host}:#{serviceDescription} is #{serviceState}: #{serviceOutput}"
+  cb "**Nagios #{notificationType} :** \n blockquote>#{host}:#{serviceDescription} is #{serviceState} : #{serviceOutput}"
