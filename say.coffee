@@ -63,6 +63,13 @@ module.exports = (robot) ->
     
     msg.reply msg.random images
     
+    robot.hear /gastro/i, (msg) ->
+    images = [
+      "![](https://www.constantlyvariedgear.com/image/data/cvgblog/mud-run/mud-run-live-pictures.jpeg)"
+    ]
+    
+    msg.reply msg.random images
+    
   robot.hear /root|noot|pingu/i, (msg) ->
     msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
