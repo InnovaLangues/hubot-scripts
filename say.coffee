@@ -27,7 +27,7 @@ module.exports = (robot) ->
       msg.match[1],
       msg.match[3]
     ]
-    msg.reply msg.random messages
+    msg.reply msg.random messages + " va gagner."
 
   robot.hear /biere|bière|apero|apéro|picole|alcool/i, (msg) ->
     messages = [
