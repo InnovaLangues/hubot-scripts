@@ -92,7 +92,15 @@ module.exports = (robot) ->
       "Complètement",
       "Faut voir...",
       "RTFM",
-      "Vous pouvez répétez la question ?"
+      "Vous pouvez répétez la question ?",
+      "Peut-être bien que oui, peut-être bien que non",
+      "Et toi ?",
+      "Certainement",
+      "Possiblement",
+      "Oui",
+      "Non",
+      "Peut-être",
+      "C'est possible"
     ]
     msg.reply msg.random messages
 
