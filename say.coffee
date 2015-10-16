@@ -20,6 +20,9 @@ module.exports = (robot) ->
     
   robot.hear /neige/i, (msg) ->
     msg.reply "![](http://s1.minutebuzz.com/i/2014/07/jeanneige-L.png.jpg)"
+    
+  robot.hear /montre|watch|heure/i, (msg) ->
+    msg.reply "![](http://static.hitek.fr/img/actualite/2015/08/10/11181582-983164571707014-4899038689675206199-n.jpg)"
 
   robot.respond /say (.*?) (.*)/i, (msg) ->
     robot.messageRoom msg.match[1], msg.match[2]
