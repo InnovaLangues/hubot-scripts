@@ -14,6 +14,9 @@ module.exports = (robot) ->
     
   robot.respond /merci/i, (msg) ->
     msg.reply "De rien!"
+    
+  robot.hear /merci hubot/i, (msg) ->
+    msg.reply "De rien!"
 
   robot.respond /say (.*?) (.*)/i, (msg) ->
     robot.messageRoom msg.match[1], msg.match[2]
