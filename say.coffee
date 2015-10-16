@@ -17,6 +17,9 @@ module.exports = (robot) ->
     
   robot.hear /merci hubot/i, (msg) ->
     msg.reply "De rien!"
+    
+  robot.hear /neige/i, (msg) ->
+    msg.reply "![](http://s1.minutebuzz.com/i/2014/07/jeanneige-L.png.jpg)"
 
   robot.respond /say (.*?) (.*)/i, (msg) ->
     robot.messageRoom msg.match[1], msg.match[2]
