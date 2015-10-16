@@ -29,6 +29,16 @@ module.exports = (robot) ->
     ]
     msg.reply msg.random messages
 
+  
+  robot.hear /^si\s/i, (msg) ->
+    messages = [
+      "Avec des si, on mettrait Paris en bouteille.",
+      "Si les chiens avaient des scies, il n’y aurait plus de poteaux.",
+      "Si la mer bouillait, il y aurait bien des poissons de cuits.",
+      "Si ma grand-mère avait des roues, ce serait un autobus."
+    ]
+    msg.reply msg.random messages
+
   robot.hear /biere|bière|apero|apéro|picole|alcool/i, (msg) ->
     messages = [
       "Bonne idée, j'ai soif",
