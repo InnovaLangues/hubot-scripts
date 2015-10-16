@@ -84,6 +84,16 @@ module.exports = (robot) ->
     ]
     msg.reply msg.random messages
 
+  robot.hear /\?$/i, (msg) ->
+    messages = [
+      "Dans le doute, on va dire que oui.",
+      "Complètement",
+      "Faut voir...",
+      "RTFM",
+      "Vous pouvez répétez la question ?"
+    ]
+    msg.reply msg.random messages
+
   robot.hear /maman|mère|pute|prostituée|péripapétitienne|moche/i, (msg) ->
     images = [
       "![](http://m.memegen.com/11x8gi.jpg)",
