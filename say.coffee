@@ -84,9 +84,11 @@ module.exports = (robot) ->
     ]
     msg.reply msg.random messages
 
-  robot.hear /\?$/i, (msg) ->
+  robot.hear /^hubot.*\?$/i, (msg) ->
     messages = [
       "Dans le doute, on va dire que oui.",
+      "Pas du tout",
+      "Complètement pas",
       "Complètement",
       "Faut voir...",
       "RTFM",
