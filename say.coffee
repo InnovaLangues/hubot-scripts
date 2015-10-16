@@ -22,7 +22,7 @@ module.exports = (robot) ->
     msg.reply "![](http://s1.minutebuzz.com/i/2014/07/jeanneige-L.png.jpg)"
 
   robot.hear /recette/i, (msg) ->
-    msg.reply "Tiens, il y a de bon exemple [ici](http://couperfoutre.tumblr.com/)"
+    msg.reply "Tiens, il y a de bons exemples [ici](http://couperfoutre.tumblr.com/)"
     
   robot.hear /montre|watch|heure/i, (msg) ->
     msg.reply "![](http://static.hitek.fr/img/actualite/2015/08/10/11181582-983164571707014-4899038689675206199-n.jpg)"
