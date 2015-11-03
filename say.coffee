@@ -104,7 +104,7 @@ module.exports = (robot) ->
     ]
     msg.reply msg.random messages
 
-  robot.hear /maman|mère|pute|prostituée|péripapétitienne|moche/i, (msg) ->
+  robot.hear /maman|mère|prostituée|péripapétitienne|moche/i, (msg) ->
     images = [
       "![](http://m.memegen.com/11x8gi.jpg)",
       "![](http://m.memegen.com/hwbi00.jpg)",
