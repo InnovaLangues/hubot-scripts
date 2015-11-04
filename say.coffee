@@ -27,6 +27,9 @@ module.exports = (robot) ->
   robot.hear /montre|heure/i, (msg) ->
     msg.reply "![](http://static.hitek.fr/img/actualite/2015/08/10/11181582-983164571707014-4899038689675206199-n.jpg)"
 
+  robot.hear /j(e )?sais pas|aucune idée|/i, (msg) ->
+    msg.reply "![](http://www.jdubuzz.com/files/2015/11/giphy.gif)"
+
   robot.respond /say (.*?) (.*)/i, (msg) ->
     robot.messageRoom msg.match[1], msg.match[2]
 
