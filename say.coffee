@@ -56,6 +56,12 @@ module.exports = (robot) ->
       "Si ma grand-mère avait des roues, ce serait un autobus."
     ]
     msg.reply msg.random messages
+    
+  robot.hear /metal/i, (msg) ->
+    messages = [
+      "![](http://gadizmo.com/wp-content/uploads/2013/01/chrome-robot.jpg)"
+    ]
+    msg.reply msg.random messages
 
   robot.hear /biere|bière|apero|apéro|picole|alcool/i, (msg) ->
     messages = [
