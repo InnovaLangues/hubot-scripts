@@ -136,3 +136,6 @@ module.exports = (robot) ->
   robot.hear /root|noot|pingu/i, (msg) ->
     msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
+    
+  robot.hear /ta geule/i, (msg) ->
+    msg.send "![](https://i.ytimg.com/vi/75yrOfUZYnk/maxresdefault.jpg)"
