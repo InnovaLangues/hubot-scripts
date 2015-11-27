@@ -137,5 +137,5 @@ module.exports = (robot) ->
     msg.send "ROOOOT ROOOOOOOOOOOT!!!"
     msg.send "![](http://noot.space/noot.gif)"
     
-  robot.hear /hubot ta geule|ta geule hubot/i, (msg) ->
+  robot.hear /hubot ta geule|ta geule hubot|hubot ta gueule|ta gueule hubot/i, (msg) ->
     msg.send "![](https://i.ytimg.com/vi/75yrOfUZYnk/maxresdefault.jpg)"
