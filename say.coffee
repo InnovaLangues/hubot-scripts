@@ -139,3 +139,6 @@ module.exports = (robot) ->
     
   robot.hear /hubot ta geule|ta geule hubot|hubot ta gueule|ta gueule hubot/i, (msg) ->
     msg.send "![](https://i.ytimg.com/vi/75yrOfUZYnk/maxresdefault.jpg)"
+    
+  robot.hear /hubot t'es con|t'es con hubot/i, (msg) ->
+    msg.send "![](http://p5.storage.canalblog.com/58/36/588442/75394756.jpg)"
