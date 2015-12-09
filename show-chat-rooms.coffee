@@ -26,3 +26,4 @@ module.exports = (robot) ->
             msg.send message
           else
             msg.send "I know about no chat rooms :("
+
