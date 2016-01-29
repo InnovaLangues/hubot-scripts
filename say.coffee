@@ -20,6 +20,9 @@ module.exports = (robot) ->
     
   robot.hear /neige/i, (msg) ->
     msg.reply "![](http://s1.minutebuzz.com/i/2014/07/jeanneige-L.png.jpg)"
+    
+  robot.hear /ciao/i, (msg) ->
+    msg.reply "![](http://i.imgur.com/lB79D5s.gif)"
 
   robot.hear /recette/i, (msg) ->
     msg.reply "Tiens, il y a de bons exemples [ici](http://couperfoutre.tumblr.com/)"
