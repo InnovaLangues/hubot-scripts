@@ -18,6 +18,9 @@ module.exports = (robot) ->
   robot.hear /merci hubot/i, (msg) ->
     msg.reply "De rien!"
     
+  robot.hear /louche/i, (msg) ->
+    msg.reply "![](http://cdn.meme.am/instances/57295431.jpg)"
+    
   robot.hear /neige/i, (msg) ->
     msg.reply "![](http://s1.minutebuzz.com/i/2014/07/jeanneige-L.png.jpg)"
     
